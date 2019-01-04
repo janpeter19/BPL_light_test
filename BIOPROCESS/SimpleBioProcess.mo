@@ -3,11 +3,11 @@ model SimpleBioProcess
   import BIOPROCESS.Units.*;
   // Parameters:
   parameter Concentration Ks = 0.1 "Substrate uptake saturation";
-  parameter UptakeRate qSmax = 1.00 / 3600 "Substrate uptake maximal rate";
+  parameter UptakeRate qSmax = 1.00  "Substrate uptake maximal rate";
   parameter Yield Yxs = 0.50 "Yield of cells from substrate";
   // parameter Real  Ypx     = 0.08 "Product formation rate growth related";
   parameter FormationRate_GrowthDep alpha = 0.08 "Product formation rate growth dependent";
-  parameter FormationRate beta = 0.03 / 3600 "Product formation rate not growth dependent";
+  parameter FormationRate beta = 0.03  "Product formation rate not growth dependent";
   // The inital state values:
   parameter Mass VS_0 = 2;
   parameter Mass VX_0 = 1;

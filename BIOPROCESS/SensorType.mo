@@ -3,8 +3,8 @@ block SensorType
   input LiquidCon probe;
   discrete output LiquidCon out;
   parameter Real sigma(unit = "g/L") = 0.1 "Standard deviation on measured substrate conc S";
-  parameter Real samplePeriod(unit = "h") = 0.1 "Sample period of noise generator";
-  parameter Real sampleStart(unit = "h") = samplePeriod "Start time";
+  parameter Units.Time samplePeriod = 0.1 "Sample period of noise generator";
+  parameter Units.Time sampleStart = samplePeriod "Start time";
   NormalNoise noise(samplePeriod = samplePeriod, mu = 0.0, sigma = sigma);
   inner Modelica.Blocks.Noise.GlobalSeed globalSeed;
 equation
