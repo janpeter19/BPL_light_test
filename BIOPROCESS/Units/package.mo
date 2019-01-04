@@ -6,7 +6,7 @@ package Units "Physical units"
   // Dymola needs small letter for physical units (no idea if this is Modelica standard)
   //
   
-    type Concentration = Modelica.Icons.TypeReal(final quantity = "Concentration", final unit = "g/l", min = 0) " Concentration of a substance [g/l]";
+  type Concentration = Modelica.Icons.TypeReal(final quantity = "Concentration", final unit = "g/l", min = 0) " Concentration of a substance [g/l]";
 
   type Volume = Modelica.Icons.TypeReal(final quantity = "Volume", final unit = "l", min = 0) "Volume [l]";
 
@@ -23,4 +23,6 @@ package Units "Physical units"
   type Yield = Modelica.Icons.TypeReal(final quantity = "Yield", final unit = "1") "Yield [1]";
 
   type Hour = Modelica.Icons.TypeReal(final quantity = "Hour", final unit = "h") "Hour [h]";
+  
+  type Time = Modelica.Icons.TypeReal(final quantity = "Time", final unit = "s") "Seconds [s]"; 
 end Units;
