@@ -12,4 +12,7 @@ Files:
 Information about Bioprocess Library for Modelica you find here: 
 https://www.researchgate.net/project/Modelica-library-for-simulation-of-bioprocesses
 
-Contact me at: jan.peter.axelsson@vascaia.se
+The software used here is JModelica from Modelon in Lund. It is open source and you can obtain it here:
+https://jmodelica.org
+
+For further infomration contact me at: jan.peter.axelsson@vascaia.se
