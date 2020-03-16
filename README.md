@@ -4,7 +4,7 @@ Here I study a very basic example of sensitivity analysis of a bioprocess. The p
 
 Successful results is here defined as that final cell concentration > 5 g/L and  cultivation time < 6 hours. The end criteria is defined as when substrate concentration goes below a low level, here 1 g/L. 
 
-Brute force simulation of 20x20 parameter value show results of what parameter combinations give a successful outcome, marked blue and failure red.  The simulations are also done with some noise in the measurement and we see the effect of that.
+Brute force simulation of 20x20 parameter value show results of what parameter combinations give a successful outcome, marked blue and failure red. The is often called desgin space in the pharmaceutical industry. The simulations are also done with some noise in the measurement and we see the effect of that.
 
 In practice a sensitivity analysis is often done experimentally and by reduced factor design of experiments and only a few experiments are needed. It is interesting to see how computer simulation can contribute to facilitate the experimental work. This is discussed in the following conference contribution 2019:
 
