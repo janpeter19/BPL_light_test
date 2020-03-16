@@ -9,7 +9,7 @@ Files:
  - b13_batch_noise,oy - Script that run the model with noise, result br13_batch_noise_seed_1.png and _seed_2.png
  - b13_batch_noise_sweep - Script that runs the model with 20x20 parameter settings, results br13_batch_noise_sweep_fig1_400.png and _fig2_400.png
 
-Information about Bioprocess Library for Modelica you fine here: 
+Information about Bioprocess Library for Modelica you find here: 
 https://www.researchgate.net/project/Modelica-library-for-simulation-of-bioprocesses
 
 Contact me at: jan.peter.axelsson@vascaia.se
