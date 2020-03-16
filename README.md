@@ -1,6 +1,15 @@
 ## An example of sensitivity analysis using Bioprocess Library for Modelica 
 
-Here I will make a short description of these simulations....
+Here I study a very basic example of sensitivity analysis of a bioprocess. The process is batch cultivation of a microorganism. The question is: what process parameter combinations in a given range, bring a successful outcome of the final result? 
+
+Successful results is here defined as that final cell concentration > 5 g/L and  cultivation time < 6 hours. The end criteria is defined as when substrate concentration goes below a low level, here 1 g/L. 
+
+Brute force simulation of 20x20 parameter value show results of what parameter combination gives a successful outcome, marked blue and failure red.  The simulations are also done with some noise in the measurement and we see the effect of that.
+
+In practice a sensitivity analysis is often done experimentally and by reduced factor design of experiments and only a few experiments are needed. It is interesting to see how computer simulation can contribute to facilitate the experimental work. This is discussed in the following conference contribution 2019:
+
+Axelsson J.P. and A. Elsheikh: “An example of sensitivity analysis of a bioprocess using Bioprocess Library for Modelica”, Proceedings MODPROD, Linköping, Sweden 2019, see 
+https://modprodblog.wordpress.com/modprod-2019/
 
 Files:
  - b13.mo - The Modelica model with two configuration with/without noise
