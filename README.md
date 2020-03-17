@@ -4,7 +4,7 @@ Here I study a very basic example of sensitivity analysis of a bioprocess. The p
 
 Successful results is here defined as that final cell concentration > 5 g/L and  cultivation time < 6 hours. The end criteria is defined as when substrate concentration goes below a low level, here 1 g/L. 
 
-Brute force simulation of 20x20 parameter value show results of what parameter combinations give a successful outcome, marked blue and failure red. The is often called desgin space in the pharmaceutical industry. The simulations are also done with some noise in the measurement and we see the effect of that.
+Brute force simulation of 20x20 parameter value show results of what parameter combinations give a successful outcome, marked blue and failure red. This is often called design space in the pharmaceutical industry. The simulations are also done with some noise in the measurement and we see the effect of that.
 
 In practice a sensitivity analysis is often done experimentally and by reduced factor design of experiments and only a few experiments are needed. It is interesting to see how computer simulation can contribute to facilitate the experimental work. This is discussed in the following conference contribution 2019:
 
@@ -18,7 +18,7 @@ Files:
  - b13_batch_noise,oy - Script that run the model with noise, result br13_batch_noise_seed_1.png and _seed_2.png
  - b13_batch_noise_sweep - Script that runs the model with 20x20 parameter settings, results br13_batch_noise_sweep_fig1_400.png and _fig2_400.png
 
-Information about Bioprocess Library for Modelica you find here: 
+Information about Bioprocess Library _for_ Modelica you find here: 
 https://www.researchgate.net/project/Modelica-library-for-simulation-of-bioprocesses
 
 The software used here is JModelica from Modelon in Lund. It is free and open source and you can obtain it here:
