@@ -1,4 +1,4 @@
-## An example of sensitivity analysis using Bioprocess Library for Modelica 
+## An example of sensitivity analysis using Bioprocess Library _for_ Modelica 
 
 Here I study a very basic example of sensitivity analysis of a bioprocess. The process is batch cultivation of a microorganism. The question is: what process parameter combinations in a given range, bring a successful outcome of the final result? 
 
