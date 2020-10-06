@@ -8,14 +8,14 @@ package BIOPROCESS
     // Author: Jan Peter Axelsson
     // 2013-08-16 - Created
     // 2013-08-31 - Modified
-	// 2018-12-20 - Added block to detect end of cultivation
-	// 2018-12-21 - Added units and descriptions of variables in standard non-SI way
-	// 2019-01-02 - Modified DetectecEndBatchType to detect once only and include batch evaluation
+    // 2018-12-20 - Added block to detect end of cultivation
+    // 2018-12-21 - Added units and descriptions of variables in standard non-SI way
+    // 2019-01-02 - Modified DetectecEndBatchType to detect once only and include batch evaluation
     
 	connector LiquidCon
-		Real S (unit="g/L")         "Substrate conc";
-		Real X (unit="g/L")         "Cell conc";
-		Real P (unit="g/L")         "Product conc";
+		Real S (unit="g/L")                   "Substrate conc";
+		Real X (unit="g/L")                   "Cell conc";
+		Real P (unit="g/L")                   "Product conc";
 	end LiquidCon;
 	
     model ReactorType
@@ -29,7 +29,7 @@ package BIOPROCESS
         parameter Real beta (unit="g/(g*h)")= 0.03    "Product formation rate not growth related";
 
         // The inital state values:
-        parameter Real VS_0 (unit="g") = 10.0          "Initial substrate mass";   
+        parameter Real VS_0 (unit="g") = 10.0         "Initial substrate mass";   
         parameter Real VX_0 (unit="g") = 2.0          "Initial cell mass";
         parameter Real VP_0 (unit="g") = 0.0          "Initial product mass";   
         parameter Real V_0 (unit="L") = 1.0           "Initial volume reactor broth"; 
@@ -42,11 +42,11 @@ package BIOPROCESS
 
         // Concentrations and rates:
     	Real S (unit="g/L")                           "Substrate conc";
-		Real X (unit="g/L")                           "Cell conc"; 
-		Real P (unit="g/L")                           "Product conc"; 
+		Real X (unit="g/L")                   "Cell conc"; 
+		Real P (unit="g/L")                   "Product conc"; 
     	Real qS (unit="g/(g*h)")                      "Specific substrate uptake rate";
-		Real qP (unit="g/(g*h)")                      "Specific product formation rate"; 
-		Real mu (unit="1/h")                          "Specific cell growth rate";
+		Real qP (unit="g/(g*h)")              "Specific product formation rate"; 
+		Real mu (unit="1/h")                  "Specific cell growth rate";
     equation
         // Concentrations:
         S = VS/V;                        
@@ -79,7 +79,7 @@ package BIOPROCESS
 		Real S_final (start=0, fixed=true, unit="g/L")          "Substrate conc final";
 		Real P_final (start=0, fixed=true, unit="g/L")          "Product conc final" ;
 		Real batch_evaluation (start=0, fixed=true)             "Batch evaluation - accepted for >0";
-	    discrete Boolean firstTime (start=true, fixed=true)     "Detect crossing S<S_min firstTime only";
+	    discrete Boolean firstTime (start=true, fixed=true)         "Detect crossing S<S_min firstTime only";
 	equation
 		when (probe.S < S_min) and pre(firstTime) then
 			firstTime = false;
