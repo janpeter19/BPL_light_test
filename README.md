@@ -2,6 +2,8 @@
 
 Here I study a very basic example of sensitivity analysis of a bioprocess. The process is batch cultivation of a microorganism. The question is: what process parameter combinations in a given range, bring a successful outcome of the final result? 
 
+![](br13_batch.png)
+
 Successful results is here defined as that final cell concentration > 5 g/L and  cultivation time < 6 hours. The end criteria is defined as when substrate concentration goes below a low level, here 1 g/L. 
 
 ![](br13_batch_sweep_fig2_400.png)
