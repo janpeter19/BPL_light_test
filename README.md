@@ -23,7 +23,7 @@ Files:
  - b13_batch_noise_sweep - Script that runs the model with 20x20 parameter settings, results br13_batch_noise_sweep_fig1_400.png and _fig2_400.png
 
 Information about Bioprocess Library _for_ Modelica you find here: 
-https://www.researchgate.net/project/Modelica-library-for-simulation-of-bioprocesses and under project log you find project updates that I hope will make you interesed.
+https://www.researchgate.net/project/Modelica-library-for-simulation-of-bioprocesses and under project log you find project updates that I hope will make you interested.
 
 The software used here is JModelica from Modelon in Lund. It is free and open source and you can obtain it here:
 https://jmodelica.org 
